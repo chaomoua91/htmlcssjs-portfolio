@@ -246,11 +246,13 @@ h3 {
     @media (max-width: 1024px) {
       flex-direction: column;
     }
+
     article {
       background-color: var(--yellow-100);
       padding: 30px;
       border-radius: 30px;
       flex: 1;
+
       h3 {
         margin-top: 20px;
         margin-bottom: 10px;
@@ -291,6 +293,7 @@ h3 {
           transition: ease 0.3s all;
         }
         &:hover {
+          filter: blur(0);
           figcaption {
             opacity: 1;
             visibility: visible;
@@ -303,3 +306,36 @@ h3 {
     }
   }
 }
+
+.autoShow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* .autoBlur {
+  animation: autoBlurAnimation linear both;
+  animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation {
+  0% {
+    filter: blur(40px);
+  }
+  45%,
+  55% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(40px);
+  }
+} */
