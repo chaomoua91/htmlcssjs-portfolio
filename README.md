@@ -1,1 +1,1 @@
-# simple HTML & CSS webpage
+# simple HTML & CSS webpage about myself
