@@ -128,8 +128,8 @@ h1 {
     display: flex;
     justify-content: center;
     img {
-      /* max-width: 420px; */
-      border-radius: 5px;
+      min-width: 100%;
+      border-radius: 30px;
     }
   }
 }
