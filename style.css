@@ -26,7 +26,7 @@ body {
   font-weight: auto;
   font-style: normal;
   font-size: 1.1rem;
-  background-color: var(--base-100);
+  background-color: white;
 }
 
 .container {
