@@ -253,7 +253,7 @@ h3 {
     }
 
     article {
-      background-color: var(--yellow-100);
+      background-color: var(--yellow);
       padding: 30px;
       border-radius: 30px;
       flex: 1;
